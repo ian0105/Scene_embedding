@@ -25,7 +25,7 @@ def make_embedding(sentences, model,tokenizer):
 
 def scenesentence_to_embedding(scene_dict):
     scene_embedding = {}
-    for i, char_dict in ten.scene_dict.items():
+    for i, char_dict in scene_dict.items():
         scene = {}
         for char, sent in char_dict.items():
             emb = make_embedding(sent)
